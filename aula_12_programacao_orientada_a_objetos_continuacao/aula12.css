@@ -1,0 +1,74 @@
+/* Estrutura */
+.input-container {
+  position: relative;
+  width: 50%;
+}
+
+input {
+  border: 0;
+  border-radius: 30px;
+  border-bottom: 2px solid #9e9e9e;
+  outline: none;
+  transition: .2s ease-in-out;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+label {
+  top: 0;
+  left: 0; right: 0;
+  color: #616161;
+  box-sizing: border-box;
+}
+
+input, 
+label {
+  width: 100%;
+  height: 3rem;
+  font-size: 1rem;
+}
+/* Interação*/
+input:valid,
+input:focus {
+  border-bottom: 2px solid #ffcdc8;  
+}
+
+input:valid + label,
+input:focus + label {
+  color: #ffcdc8;
+  font-size: .8rem;
+  top: -30px;
+  pointer-events: none;
+}
+
+/* Só pra deixar um pouco mais bonito */
+* {
+    font-family: sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #feebe6;
+}
+h1 {
+    color: #616161;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #616161;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section {
+    margin: 15px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 0 0 2px 2px;
+    background-color: #FFF;
+}
