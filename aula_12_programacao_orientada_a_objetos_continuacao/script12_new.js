@@ -26,7 +26,7 @@ function showInfo(c) {
     document.getElementById("sendoDirigido").value = drive(); 
     document.getElementById("freiado").value = brake();   
     document.getElementById("motorDesligado").value = stop();   
-    document.getElementById("informacaoGeral").value = toString(c);     
+    document.getElementById("informacaoGeral").value = info(c);     
 }
 
 //ligar motor
@@ -46,6 +46,6 @@ function stop() {
         return "O motor foi desligado";
 };
 //Retorna as informações do carro
-function toString(c){
-    return "Nome: " + c.name + ", " + "Modelo: " + c.carMaker + ", " + "Peso: " + c.weight + ", " + "Cor: " + c.color;
+function info(c){
+    return "Nome: " + c.name + ", " + "Fabricante: " + c.carMaker + ", " + "Peso: " + c.weight + ", " + "Cor: " + c.color;
 };

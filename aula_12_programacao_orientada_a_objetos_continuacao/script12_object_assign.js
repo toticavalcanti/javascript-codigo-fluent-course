@@ -27,7 +27,7 @@ function getDataFromForm() {
 };
 
 //mostra as informações nos campos de saída do HTML
-function showInfo(carObject, companyObject) {
+function showInfo(carObject, companyObject, driverObject) {
     document.getElementById("informacaoGeralEmpresa").value = companyObject.toString();   
     document.getElementById("informacaoGeralCarro").value = carObject.toString();  
     document.getElementById("metodoLigarMotor").value = carObject.start();  

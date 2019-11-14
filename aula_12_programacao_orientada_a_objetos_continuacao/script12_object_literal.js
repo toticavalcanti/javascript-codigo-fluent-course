@@ -47,6 +47,6 @@ const car_object =  {
     },
     //Retorna as informações do carro
     toString: function(){
-        return "Nome: " + this.name + ", " + "Modelo: " + this.carMaker + ", " + "Peso: " + this.weight + ", " + "Cor: " + this.color;
+        return "Nome: " + this.name + ", " + "Fabricante: " + this.carMaker + ", " + "Peso: " + this.weight + ", " + "Cor: " + this.color;
     }
 };
